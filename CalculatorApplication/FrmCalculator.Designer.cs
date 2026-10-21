@@ -42,6 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(40, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 21);
@@ -69,6 +70,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(16, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(183, 21);
@@ -87,6 +89,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(133, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(289, 21);
@@ -97,6 +100,7 @@
             // 
             this.lblDisplayTotal.AutoSize = true;
             this.lblDisplayTotal.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplayTotal.ForeColor = System.Drawing.Color.White;
             this.lblDisplayTotal.Location = new System.Drawing.Point(227, 155);
             this.lblDisplayTotal.Name = "lblDisplayTotal";
             this.lblDisplayTotal.Size = new System.Drawing.Size(0, 21);
@@ -104,19 +108,24 @@
             // 
             // btnEqual
             // 
+            this.btnEqual.BackColor = System.Drawing.Color.Green;
+            this.btnEqual.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEqual.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEqual.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnEqual.Location = new System.Drawing.Point(270, 198);
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.Size = new System.Drawing.Size(115, 33);
             this.btnEqual.TabIndex = 7;
             this.btnEqual.Text = "Calculate";
-            this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.UseVisualStyleBackColor = false;
             this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // FrmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(452, 263);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.lblDisplayTotal);
@@ -128,6 +137,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCalculator";
             this.Text = "FrmCalculator";
+            this.Load += new System.EventHandler(this.FrmCalculator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

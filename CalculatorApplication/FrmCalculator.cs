@@ -57,5 +57,10 @@ namespace CalculatorApplication
                 cal.CalculateEvent -= new Formula<double>(cal.GetQuotient);
             }
         }
+
+        private void FrmCalculator_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
